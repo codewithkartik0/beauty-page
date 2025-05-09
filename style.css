@@ -1,0 +1,181 @@
+/* Global Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Lora', serif;
+
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    height: 70vh;
+}
+
+#book {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: aliceblue url('banner.jpg') center/cover no-repeat;
+}
+
+#book h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#book button {
+    opacity: 0.8;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Main Content */
+main {
+    width: 100%;
+}
+
+/* Services Section */
+#service {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#serviceinclude {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#serviceinclude div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    width: 300px;
+    text-align: center;
+}
+
+#serviceinclude div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#serviceinclude div p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 30px;
+}
+
+#about img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about #name {
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer / Gallery */
+footer {
+    width: 100%;
+    background-color: aliceblue;
+    padding: 50px 20px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#galleryimg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#galleryimg img {
+    width: 20%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#bottom {
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: auto;
+}
+
+#bottom::-webkit-scrollbar {
+    display: none;
+}
+
+#bottom div {
+    flex-shrink: 0;
+    height: 80%;
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: none;
+    background-color: rgb(203, 109, 109);
+}
+
+#bottom div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#bottom div img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Social Section Placeholder */
+#social {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
